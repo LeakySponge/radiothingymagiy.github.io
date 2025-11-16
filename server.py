@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Lightweight Flask server for the Radio Dashboard.
 
 - Scans 'music/' for .mp3 files
 - Extracts embedded album art (APIC ID3) into 'album-art/' (if present)

@@ -1,10 +1,584 @@
 [
     {
-        "file": "Undone - The Sweater Song - Weezer.mp3",
-        "selectedBy": "Admin"
+        "file": "music/After The Burial - Neo Seoul.mp3",
+        "title": "After The Burial - Neo Seoul",
+        "cover": "album-art/After The Burial - Neo Seoul.jpg",
+        "selectedBy": "Unknown"
     },
     {
-        "file": "Another Track.mp3",
-        "selectedBy": "DJ Mike"
+        "file": "music/Alice In Chains - Down In A Hole (2022 Remaster).mp3",
+        "title": "Alice In Chains - Down In A Hole (2022 Remaster)",
+        "cover": "album-art/Alice In Chains - Down In A Hole (2022 Remaster).jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Alice In Chains - Nutshell.mp3",
+        "title": "Alice In Chains - Nutshell",
+        "cover": "album-art/Alice In Chains - Nutshell.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Alice In Chains - Rotten Apple.mp3",
+        "title": "Alice In Chains - Rotten Apple",
+        "cover": "album-art/Alice In Chains - Rotten Apple.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Bon Jovi - Bad Medicine.mp3",
+        "title": "Bon Jovi - Bad Medicine",
+        "cover": "album-art/Bon Jovi - Bad Medicine.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Cannibal Corpse - Evisceration Plague.mp3",
+        "title": "Cannibal Corpse - Evisceration Plague",
+        "cover": "album-art/Cannibal Corpse - Evisceration Plague.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Carnifex - SLIT WRIST SAVIOR - Graveside Edition.mp3",
+        "title": "Carnifex - SLIT WRIST SAVIOR - Graveside Edition",
+        "cover": "album-art/Carnifex - SLIT WRIST SAVIOR - Graveside Edition.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Chevelle - Comfortable Liar.mp3",
+        "title": "Chevelle - Comfortable Liar",
+        "cover": "album-art/Chevelle - Comfortable Liar.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Circa Survive - Dyed In The Wool.mp3",
+        "title": "Circa Survive - Dyed In The Wool",
+        "cover": "album-art/Circa Survive - Dyed In The Wool.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Consumed by Vultures - Anomalia.mp3",
+        "title": "Consumed by Vultures - Anomalia",
+        "cover": "album-art/Consumed by Vultures - Anomalia.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Cumbeast - Cummando.mp3",
+        "title": "Cumbeast - Cummando",
+        "cover": "album-art/Cumbeast - Cummando.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Daughter - Medicine.mp3",
+        "title": "Daughter - Medicine",
+        "cover": "album-art/Daughter - Medicine.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Deftones - Be Quiet and Drive (Far Away).mp3",
+        "title": "Deftones - Be Quiet and Drive (Far Away)",
+        "cover": "album-art/Deftones - Be Quiet and Drive (Far Away).jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Deftones - My Own Summer (Shove It).mp3",
+        "title": "Deftones - My Own Summer (Shove It)",
+        "cover": "album-art/Deftones - My Own Summer (Shove It).jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Dexys Midnight Runners - Come On Eileen.mp3",
+        "title": "Dexys Midnight Runners - Come On Eileen",
+        "cover": "album-art/Dexys Midnight Runners - Come On Eileen.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Eths - Bulimiarexia.mp3",
+        "title": "Eths - Bulimiarexia",
+        "cover": "album-art/Eths - Bulimiarexia.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/EVER - Don't Know How To Love.mp3",
+        "title": "EVER - Don't Know How To Love",
+        "cover": "album-art/EVER - Don't Know How To Love.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Garbage - I Think I'm Paranoid.mp3",
+        "title": "Garbage - I Think I'm Paranoid",
+        "cover": "album-art/Garbage - I Think I'm Paranoid.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Gojira - Silvera.mp3",
+        "title": "Gojira - Silvera",
+        "cover": "album-art/Gojira - Silvera.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Gojira - Stranded.mp3",
+        "title": "Gojira - Stranded",
+        "cover": "album-art/Gojira - Stranded.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Gorillaz - Sound Check (Gravity).mp3",
+        "title": "Gorillaz - Sound Check (Gravity)",
+        "cover": "album-art/Gorillaz - Sound Check (Gravity).jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Heart - Barracuda.mp3",
+        "title": "Heart - Barracuda",
+        "cover": "album-art/Heart - Barracuda.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Hole - Violet.mp3",
+        "title": "Hole - Violet",
+        "cover": "album-art/Hole - Violet.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/jeniverse - please don't hurt me.mp3",
+        "title": "jeniverse - please don't hurt me",
+        "cover": "album-art/jeniverse - please don't hurt me.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Jimi Hendrix - Purple Haze.mp3",
+        "title": "Jimi Hendrix - Purple Haze",
+        "cover": "album-art/Jimi Hendrix - Purple Haze.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Jimi Hendrix - Voodoo Child (Slight Return).mp3",
+        "title": "Jimi Hendrix - Voodoo Child (Slight Return)",
+        "cover": "album-art/Jimi Hendrix - Voodoo Child (Slight Return).jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Jinjer - Pisces.mp3",
+        "title": "Jinjer - Pisces",
+        "cover": "album-art/Jinjer - Pisces.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Kardroz - Spontaneous Combustion.mp3",
+        "title": "Kardroz - Spontaneous Combustion",
+        "cover": "album-art/Kardroz - Spontaneous Combustion.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Korn - Coming Undone.mp3",
+        "title": "Korn - Coming Undone",
+        "cover": "album-art/Korn - Coming Undone.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/La Dispute - Nobody, Not Even the Rain.mp3",
+        "title": "La Dispute - Nobody, Not Even the Rain",
+        "cover": "album-art/La Dispute - Nobody, Not Even the Rain.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/LANDMVRKS - Rainfall.mp3",
+        "title": "LANDMVRKS - Rainfall",
+        "cover": "album-art/LANDMVRKS - Rainfall.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Led Zeppelin - Black Dog - Remaster.mp3",
+        "title": "Led Zeppelin - Black Dog - Remaster",
+        "cover": "album-art/Led Zeppelin - Black Dog - Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Led Zeppelin - Good Times Bad Times - 1993 Remaster.mp3",
+        "title": "Led Zeppelin - Good Times Bad Times - 1993 Remaster",
+        "cover": "album-art/Led Zeppelin - Good Times Bad Times - 1993 Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Led Zeppelin - Immigrant Song - Remaster.mp3",
+        "title": "Led Zeppelin - Immigrant Song - Remaster",
+        "cover": "album-art/Led Zeppelin - Immigrant Song - Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Led Zeppelin - Rock and Roll - Remaster.mp3",
+        "title": "Led Zeppelin - Rock and Roll - Remaster",
+        "cover": "album-art/Led Zeppelin - Rock and Roll - Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Linkin Park - In the End.mp3",
+        "title": "Linkin Park - In the End",
+        "cover": "album-art/Linkin Park - In the End.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Masayoshi Takanaka - Tokyo Reggie.mp3",
+        "title": "Masayoshi Takanaka - Tokyo Reggie",
+        "cover": "album-art/Masayoshi Takanaka - Tokyo Reggie.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/My Chemical Romance - To the End.mp3",
+        "title": "My Chemical Romance - To the End",
+        "cover": "album-art/My Chemical Romance - To the End.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Nirvana - About A Girl.mp3",
+        "title": "Nirvana - About A Girl",
+        "cover": "album-art/Nirvana - About A Girl.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Nirvana - All Apologies.mp3",
+        "title": "Nirvana - All Apologies",
+        "cover": "album-art/Nirvana - All Apologies.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Nirvana - Breed.mp3",
+        "title": "Nirvana - Breed",
+        "cover": "album-art/Nirvana - Breed.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Nirvana - Dumb.mp3",
+        "title": "Nirvana - Dumb",
+        "cover": "album-art/Nirvana - Dumb.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Nirvana - Heart-Shaped Box.mp3",
+        "title": "Nirvana - Heart-Shaped Box",
+        "cover": "album-art/Nirvana - Heart-Shaped Box.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Oasis - Stop Crying Your Heart Out.mp3",
+        "title": "Oasis - Stop Crying Your Heart Out",
+        "cover": "album-art/Oasis - Stop Crying Your Heart Out.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Parkway Drive - Carrion.mp3",
+        "title": "Parkway Drive - Carrion",
+        "cover": "album-art/Parkway Drive - Carrion.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pierce The Veil - Kiss Me Now.mp3",
+        "title": "Pierce The Veil - Kiss Me Now",
+        "cover": "album-art/Pierce The Veil - Kiss Me Now.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pierce The Veil - One Hundred Sleepless Nights.mp3",
+        "title": "Pierce The Veil - One Hundred Sleepless Nights",
+        "cover": "album-art/Pierce The Veil - One Hundred Sleepless Nights.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pierce The Veil - So Far So Fake.mp3",
+        "title": "Pierce The Veil - So Far So Fake",
+        "cover": "album-art/Pierce The Veil - So Far So Fake.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pink Floyd - Comfortably Numb.mp3",
+        "title": "Pink Floyd - Comfortably Numb",
+        "cover": "album-art/Pink Floyd - Comfortably Numb.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pink Floyd - Have a Cigar.mp3",
+        "title": "Pink Floyd - Have a Cigar",
+        "cover": "album-art/Pink Floyd - Have a Cigar.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pink Floyd - Money.mp3",
+        "title": "Pink Floyd - Money",
+        "cover": "album-art/Pink Floyd - Money.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pink Floyd - Time.mp3",
+        "title": "Pink Floyd - Time",
+        "cover": "album-art/Pink Floyd - Time.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pinkie Pie, Rainbow Dash, Fluttershy, Rarity, Apple Jack, My Little Pony - What My Cutie Mark is Telling Me.mp3",
+        "title": "Pinkie Pie, Rainbow Dash, Fluttershy, Rarity, Apple Jack, My Little Pony - What My Cutie Mark is Telling Me",
+        "cover": "album-art/Pinkie Pie, Rainbow Dash, Fluttershy, Rarity, Apple Jack, My Little Pony - What My Cutie Mark is Telling Me.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pixies - Debaser.mp3",
+        "title": "Pixies - Debaser",
+        "cover": "album-art/Pixies - Debaser.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Pixies - Wave Of Mutilation.mp3",
+        "title": "Pixies - Wave Of Mutilation",
+        "cover": "album-art/Pixies - Wave Of Mutilation.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Queens of the Stone Age - Go With The Flow.mp3",
+        "title": "Queens of the Stone Age - Go With The Flow",
+        "cover": "album-art/Queens of the Stone Age - Go With The Flow.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Radiohead - Bodysnatchers.mp3",
+        "title": "Radiohead - Bodysnatchers",
+        "cover": "album-art/Radiohead - Bodysnatchers.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Radiohead - Just.mp3",
+        "title": "Radiohead - Just",
+        "cover": "album-art/Radiohead - Just.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Breaking the Girl.mp3",
+        "title": "Red Hot Chili Peppers - Breaking the Girl",
+        "cover": "album-art/Red Hot Chili Peppers - Breaking the Girl.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Brendan's Death Song.mp3",
+        "title": "Red Hot Chili Peppers - Brendan's Death Song",
+        "cover": "album-art/Red Hot Chili Peppers - Brendan's Death Song.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Dark Necessities.mp3",
+        "title": "Red Hot Chili Peppers - Dark Necessities",
+        "cover": "album-art/Red Hot Chili Peppers - Dark Necessities.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Funky Monks.mp3",
+        "title": "Red Hot Chili Peppers - Funky Monks",
+        "cover": "album-art/Red Hot Chili Peppers - Funky Monks.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Give It Away.mp3",
+        "title": "Red Hot Chili Peppers - Give It Away",
+        "cover": "album-art/Red Hot Chili Peppers - Give It Away.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - Hump de Bump.mp3",
+        "title": "Red Hot Chili Peppers - Hump de Bump",
+        "cover": "album-art/Red Hot Chili Peppers - Hump de Bump.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Red Hot Chili Peppers - She Looks to Me.mp3",
+        "title": "Red Hot Chili Peppers - She Looks to Me",
+        "cover": "album-art/Red Hot Chili Peppers - She Looks to Me.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Ren - Girls!.mp3",
+        "title": "Ren - Girls!",
+        "cover": "album-art/Ren - Girls!.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Ren, CHINCHILLA - Chalk Outlines.mp3",
+        "title": "Ren, CHINCHILLA - Chalk Outlines",
+        "cover": "album-art/Ren, CHINCHILLA - Chalk Outlines.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Silverstein - Smile In Your Sleep.mp3",
+        "title": "Silverstein - Smile In Your Sleep",
+        "cover": "album-art/Silverstein - Smile In Your Sleep.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Slipknot - Duality.mp3",
+        "title": "Slipknot - Duality",
+        "cover": "album-art/Slipknot - Duality.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Slipknot - Psychosocial.mp3",
+        "title": "Slipknot - Psychosocial",
+        "cover": "album-art/Slipknot - Psychosocial.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Slipknot - Snuff.mp3",
+        "title": "Slipknot - Snuff",
+        "cover": "album-art/Slipknot - Snuff.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Slipknot - Spit It Out.mp3",
+        "title": "Slipknot - Spit It Out",
+        "cover": "album-art/Slipknot - Spit It Out.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Soundgarden - Black Hole Sun.mp3",
+        "title": "Soundgarden - Black Hole Sun",
+        "cover": "album-art/Soundgarden - Black Hole Sun.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Suicidal Tendencies - Institutionalized.mp3",
+        "title": "Suicidal Tendencies - Institutionalized",
+        "cover": "album-art/Suicidal Tendencies - Institutionalized.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Supertramp - Breakfast In America - Remastered 2010.mp3",
+        "title": "Supertramp - Breakfast In America - Remastered 2010",
+        "cover": "album-art/Supertramp - Breakfast In America - Remastered 2010.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Beaches - Blame Brett.mp3",
+        "title": "The Beaches - Blame Brett",
+        "cover": "album-art/The Beaches - Blame Brett.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Clash - London Calling - Remastered.mp3",
+        "title": "The Clash - London Calling - Remastered",
+        "cover": "album-art/The Clash - London Calling - Remastered.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Front Bottoms - Twin Size Mattress.mp3",
+        "title": "The Front Bottoms - Twin Size Mattress",
+        "cover": "album-art/The Front Bottoms - Twin Size Mattress.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Kinks - All Day and All of the Night.mp3",
+        "title": "The Kinks - All Day and All of the Night",
+        "cover": "album-art/The Kinks - All Day and All of the Night.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Kinks - You Really Got Me.mp3",
+        "title": "The Kinks - You Really Got Me",
+        "cover": "album-art/The Kinks - You Really Got Me.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Rolling Stones - Gimme Shelter.mp3",
+        "title": "The Rolling Stones - Gimme Shelter",
+        "cover": "album-art/The Rolling Stones - Gimme Shelter.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Rolling Stones - Start Me Up - Remastered 2009.mp3",
+        "title": "The Rolling Stones - Start Me Up - Remastered 2009",
+        "cover": "album-art/The Rolling Stones - Start Me Up - Remastered 2009.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Rolling Stones - Sympathy For The Devil.mp3",
+        "title": "The Rolling Stones - Sympathy For The Devil",
+        "cover": "album-art/The Rolling Stones - Sympathy For The Devil.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Smashing Pumpkins - Bullet With Butterfly Wings - Remastered 2012.mp3",
+        "title": "The Smashing Pumpkins - Bullet With Butterfly Wings - Remastered 2012",
+        "cover": "album-art/The Smashing Pumpkins - Bullet With Butterfly Wings - Remastered 2012.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Smashing Pumpkins - Today - 2011 Remaster.mp3",
+        "title": "The Smashing Pumpkins - Today - 2011 Remaster",
+        "cover": "album-art/The Smashing Pumpkins - Today - 2011 Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Smiths - This Charming Man - 2011 Remaster.mp3",
+        "title": "The Smiths - This Charming Man - 2011 Remaster",
+        "cover": "album-art/The Smiths - This Charming Man - 2011 Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Velvet Underground, Nico - Femme Fatale.mp3",
+        "title": "The Velvet Underground, Nico - Femme Fatale",
+        "cover": "album-art/The Velvet Underground, Nico - Femme Fatale.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Who - Baba O'Riley.mp3",
+        "title": "The Who - Baba O'Riley",
+        "cover": "album-art/The Who - Baba O'Riley.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Who - You Better You Bet.mp3",
+        "title": "The Who - You Better You Bet",
+        "cover": "album-art/The Who - You Better You Bet.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/The Wiggles - Old Macdonald Had a Farm.mp3",
+        "title": "The Wiggles - Old Macdonald Had a Farm",
+        "cover": "album-art/The Wiggles - Old Macdonald Had a Farm.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/These Cursed Hands - Perihelion.mp3",
+        "title": "These Cursed Hands - Perihelion",
+        "cover": "album-art/These Cursed Hands - Perihelion.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Third Ion - 138 Bit.mp3",
+        "title": "Third Ion - 138 Bit",
+        "cover": "album-art/Third Ion - 138 Bit.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Three Days Grace - Animal I Have Become.mp3",
+        "title": "Three Days Grace - Animal I Have Become",
+        "cover": "album-art/Three Days Grace - Animal I Have Become.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Tom Petty - Free Fallin'.mp3",
+        "title": "Tom Petty - Free Fallin'",
+        "cover": "album-art/Tom Petty - Free Fallin'.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Van Halen - Hot for Teacher - 2015 Remaster.mp3",
+        "title": "Van Halen - Hot for Teacher - 2015 Remaster",
+        "cover": "album-art/Van Halen - Hot for Teacher - 2015 Remaster.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Vulvodynia, Acrania - Guillotine Necktie.mp3",
+        "title": "Vulvodynia, Acrania - Guillotine Necktie",
+        "cover": "album-art/Vulvodynia, Acrania - Guillotine Necktie.jpg",
+        "selectedBy": "Unknown"
+    },
+    {
+        "file": "music/Weezer - Buddy Holly.mp3",
+        "title": "Weezer - Buddy Holly",
+        "cover": "album-art/Weezer - Buddy Holly.jpg",
+        "selectedBy": "Unknown"
     }
 ]
