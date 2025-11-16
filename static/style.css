@@ -1,0 +1,36 @@
+:root{
+  --bg: #0d0f10;
+  --panel: rgba(30,30,40,0.6);
+  --muted: #9aa0a6;
+  --accent1: #ff6b9f;
+  --accent2: #6be3ff;
+  --radius: 18px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; background: linear-gradient(135deg,#121217,#0a0b0d); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#eaf2f6}
+
+.panel{
+  margin: 18px auto;
+  padding: 20px;
+  border-radius: var(--radius);
+  max-width: 1280px;
+  background: var(--panel);
+  backdrop-filter: blur(12px) saturate(120%);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.clock-row{ display:flex; gap:12px; align-items:center; }
+.time{ font-size:48px; font-weight:700; }
+.live-badge{ background: linear-gradient(90deg,var(--accent1),var(--accent2)); padding:6px 10px; border-radius:12px; font-weight:700; color:#070707; }
+
+.title{ font-size:30px; margin: 8px 0 6px 0; letter-spacing: 0.6px; text-transform:uppercase; font-weight:700; color:#ffffff; }
+.muted{ color:var(--muted); font-size:14px; }
+
+.track-list{ display:flex; gap:14px; overflow-x:auto; padding:8px 2px; }
+.track-card{ min-width:180px; background: rgba(255,255,255,0.04); padding:10px; border-radius:12px; flex-shrink:0; transition:transform .15s ease, background .15s ease; }
+.track-card:hover{ transform:translateY(-6px); background: rgba(255,255,255,0.07); }
+.track-card img{ width:100%; height:110px; object-fit:cover; border-radius:8px; display:block; margin-bottom:10px; }
+.track-card .t{ font-weight:700; color:#eaf6f8; font-size:14px; }
+.track-card .s{ color:var(--muted); font-size:12px; margin-top:6px; }

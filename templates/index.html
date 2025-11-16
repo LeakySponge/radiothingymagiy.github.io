@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Radio Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hero" class="panel">
+      <div style="display:flex; gap:28px; align-items:center;">
+        <div style="flex:1;">
+          <div class="clock-row">
+            <div id="time" class="time">00:00</div>
+          </div>
+          <h1 id="title" class="title">Loading…</h1>
+          <div id="selected" class="muted">Selected by —</div>
+        </div>
+        <div style="width:260px;">
+          <img id="albumArt" src="/static/placeholder.jpg" alt="album art" style="width:100%; border-radius:12px;">
+        </div>
+      </div>
+    </header>
+
+    <section class="panel" style="margin-top:18px;">
+      <h3 style="margin:0 0 12px 0;">Upcoming</h3>
+      <div id="trackList" class="track-list"></div>
+    </section>
+  </div>
+
+  <audio id="player"></audio>
+  <script src="/static/script.js"></script>
+</body>
+</html>
