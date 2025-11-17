@@ -26,6 +26,19 @@
 <audio id="audio" preload="auto"></audio>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.7/jsmediatags.min.js"></script>
+<!-- Inline Firebase config for GitHub Pages (keeps firebase-config.json out of the repo) -->
+<script>
+    window.__FIREBASE_CONFIG = {
+        apiKey: "AIzaSyDzDxO4zttnOD2zdb6jtlH0mGP-HV48ifY",
+        authDomain: "pmssradio.firebaseapp.com",
+        databaseURL: "https://pmssradio-default-rtdb.firebaseio.com",
+        projectId: "pmssradio",
+        storageBucket: "pmssradio.firebasestorage.app",
+        messagingSenderId: "276224366116",
+        appId: "1:276224366116:web:fe54d91da99b704aa8eab1",
+        measurementId: "G-TR5NEQNSV5"
+    };
+</script>
 <!-- Load client as an ES module so we can use the modular Firebase SDK -->
 <script type="module" src="radio.js"></script>
 </body>
