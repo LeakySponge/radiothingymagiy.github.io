@@ -1,0 +1,9 @@
+firebase-config.json
+node_modules/
+
+# Log files
+npm-debug.log
+
+# OS files
+.DS_Store
+Thumbs.db

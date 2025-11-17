@@ -44,3 +44,28 @@ h2 {
 #selector {
     opacity: 0.6;
 }
+
+/* Status badge */
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 14px;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.status-online { background: #2ecc71; color: #04260a; }
+.status-sync   { background: #3498db; color: #ffffff; }
+.status-offline{ background: #e74c3c; color: #ffffff; }
+
+/* Small button style */
+.small-btn {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.06);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.06);
+    cursor: pointer;
+}
+.small-btn:hover { opacity: 0.9; }

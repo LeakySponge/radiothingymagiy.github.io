@@ -17,6 +17,8 @@
             <h1 id="title">Loading…</h1>
             <h2 id="artist">Please wait</h2>
             <p id="selector">Selected by: ???</p>
+            <div id="status" class="status-badge status-offline">Disconnected</div>
+            <button id="force-sync" class="small-btn" title="Force sync from Firebase">Force Sync</button>
         </div>
     </div>
 </div>
@@ -24,6 +26,7 @@
 <audio id="audio" preload="auto"></audio>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.7/jsmediatags.min.js"></script>
-<script src="radio.js"></script>
+<!-- Load client as an ES module so we can use the modular Firebase SDK -->
+<script type="module" src="radio.js"></script>
 </body>
 </html>
