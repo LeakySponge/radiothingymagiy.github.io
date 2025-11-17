@@ -40,8 +40,25 @@ window.addEventListener('offline', () => {
 // --- Initialize Firebase (modular) ---
 async function initFirebase() {
     try {
-        const configRes = await fetch('firebase-config.json');
-        const firebaseConfig = await configRes.json();
+        // Prefer an inline config exposed on the page (e.g. Pages deployment).
+        // This allows you to keep `firebase-config.json` out of the repo and
+        // still provide the config via an inline <script> in `index.html`.
+        let firebaseConfig = window.__FIREBASE_CONFIG;
+        if (!firebaseConfig) {
+            // Fetch the JSON but be defensive: the fetch may return an HTML
+            // error page (leading to a misleading JSON.parse error). Read
+            // the response as text and attempt to parse; if parsing fails
+            // include the first chunk of the response in the error to help
+            // debugging.
+            const configRes = await fetch('firebase-config.json');
+            const text = await configRes.text();
+            try {
+                firebaseConfig = JSON.parse(text);
+            } catch (e) {
+                console.error('Failed to parse firebase-config.json; response:', text.slice(0, 1000));
+                throw new Error('Invalid firebase-config.json (not JSON)');
+            }
+        }
 
         const app = initializeApp(firebaseConfig);
         db = getDatabase(app);
