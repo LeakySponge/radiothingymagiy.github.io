@@ -1,2 +1,4 @@
 Flask==2.3.3
 mutagen==1.46.0
+firebase-admin==6.2.0
+pygame==2.2.1

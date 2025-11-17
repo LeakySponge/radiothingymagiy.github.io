@@ -77,22 +77,27 @@ async function initFirebase() {
 
 // --- Setup Firebase real-time sync ---
 function setupFirebaseSync() {
-    const stateRef = ref(db, 'radio/state');
+    // Listen for track list changes
+    const tracksRef = ref(db, 'radio/tracks');
+    onValue(tracksRef, (snapshot) => {
+        const tracks = snapshot.val();
+        if (tracks && Array.isArray(tracks)) {
+            playlist = tracks;
+            console.log('[Firebase] Tracks updated:', playlist.length, 'tracks');
+        }
+    });
 
+    // Listen for playback state changes
+    const stateRef = ref(db, 'radio/state');
     onValue(stateRef, (snapshot) => {
         const state = snapshot.val();
-        if (state && state.tracks && state.tracks.length > 0) {
-            // Always adopt the server playlist and resync playback.
-            playlist = state.tracks;
+        if (state) {
             currentIndex = state.currentTrackIndex || 0;
             const elapsedSeconds = (Date.now() - (state.startTime || Date.now())) / 1000;
             syncPlayback(elapsedSeconds);
             setStatus('Synced — Live', 'status-sync');
         }
     });
-
-    // Load initial tracks (will call initializeFirebaseState when synced)
-    loadTracksLocally();
 }
 
 // --- Sync playback to Firebase time ---
@@ -128,41 +133,17 @@ function updateDisplay(track) {
     console.log('Now playing:', track);
 }
 
-// --- Load tracks locally ---
+// --- Load tracks locally (fallback) ---
 function loadTracksLocally() {
     fetch('tracks.json')
         .then(res => res.json())
         .then(tracks => {
-            if (isSynced) {
-                // Adopt server order; ensure DB state exists
-                playlist = tracks;
-                initializeFirebaseState(tracks);
-            } else {
-                playlist = shuffle(tracks);
-                currentIndex = 0;
-                setStatus('Local mode', 'status-offline');
-                playSongLocally();
-            }
+            playlist = shuffle(tracks);
+            currentIndex = 0;
+            setStatus('Local mode', 'status-offline');
+            playSongLocally();
         })
         .catch(e => console.error('Failed to load tracks.json:', e));
-}
-
-// --- Initialize Firebase state if empty ---
-async function initializeFirebaseState(tracks) {
-    const stateRef = ref(db, 'radio/state');
-    try {
-        const snapshot = await get(stateRef);
-        if (!snapshot.exists()) {
-            await set(stateRef, {
-                currentTrackIndex: 0,
-                tracks: tracks,
-                startTime: Date.now(),
-                lastUpdated: new Date().toISOString()
-            });
-        }
-    } catch (err) {
-        console.error('Failed to initialize Firebase state:', err);
-    }
 }
 
 // --- Shuffle function ---
@@ -216,14 +197,13 @@ async function forceFirebaseSync() {
     try {
         const snapshot = await get(ref(db, 'radio/state'));
         const state = snapshot.val();
-        if (state && state.tracks) {
-            playlist = state.tracks;
+        if (state && playlist.length > 0) {
             currentIndex = state.currentTrackIndex || 0;
             const elapsedSeconds = (Date.now() - (state.startTime || Date.now())) / 1000;
             syncPlayback(elapsedSeconds);
             console.log('Force synced to', currentIndex);
         } else {
-            console.warn('No radio/state present in Firebase');
+            console.warn('No radio/state present in Firebase or no tracks loaded');
         }
     } catch (err) {
         console.error('Force sync failed:', err);
