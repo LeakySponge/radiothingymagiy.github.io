@@ -21,6 +21,12 @@ let currentIndex = 0;
 let db = null;
 let isSynced = false;
 
+// Base raw URL for this project's GitHub Pages repository (used as a fallback
+// when the `file` or `cover` fields are local paths like `music/...`). This
+// keeps the Neocities page working even if `tracks.json` still contains
+// relative paths.
+const RAW_BASE = 'https://raw.githubusercontent.com/LeakySponge/radiothingymagiy.github.io/main/';
+
 function setStatus(text, cls) {
     if (!statusEl) return;
     statusEl.textContent = text;
@@ -82,7 +88,8 @@ function setupFirebaseSync() {
     onValue(tracksRef, (snapshot) => {
         const tracks = snapshot.val();
         if (tracks && Array.isArray(tracks)) {
-            playlist = tracks;
+            // Normalize any relative paths to absolute raw.githubusercontent URLs
+            playlist = tracks.map(normalizeTrackUrls);
             console.log('[Firebase] Tracks updated:', playlist.length, 'tracks');
         }
     });
@@ -105,13 +112,15 @@ function syncPlayback(elapsedSeconds) {
     const track = playlist[currentIndex];
     if (!track) return;
 
+    // Ensure track URLs are usable
+    normalizeTrackUrls(track);
     audio.src = track.file;
 
     const playAudio = () => {
         // If duration is available, clamp; otherwise try to set currentTime anyway
         const clamped = Math.max(0, Math.min(elapsedSeconds, audio.duration || elapsedSeconds));
         audio.currentTime = clamped;
-        audio.play().catch(e => console.log('Autoplay blocked:', e));
+        audio.play().catch(handleAutoplayBlocked);
         updateDisplay(track);
     };
 
@@ -129,7 +138,12 @@ function updateDisplay(track) {
     titleEl.textContent = track.title;
     artistEl.textContent = track.selectedBy || 'Unknown Artist';
     selectorEl.textContent = 'Selected by: ' + (track.selectedBy || 'DJ AutoShuffle');
-    coverEl.src = track.cover;
+    // Normalize cover URL if needed before assigning it
+    if (track.cover && !track.cover.startsWith('http')) {
+        coverEl.src = RAW_BASE + track.cover.replace(/^\/+/, '');
+    } else {
+        coverEl.src = track.cover;
+    }
     console.log('Now playing:', track);
 }
 
@@ -138,7 +152,8 @@ function loadTracksLocally() {
     fetch('tracks.json')
         .then(res => res.json())
         .then(tracks => {
-            playlist = shuffle(tracks);
+            // Normalize relative paths that may still be present in tracks.json
+            playlist = shuffle(tracks.map(normalizeTrackUrls));
             currentIndex = 0;
             setStatus('Local mode', 'status-offline');
             playSongLocally();
@@ -160,9 +175,44 @@ function playSongLocally() {
     const track = playlist[currentIndex];
     if (!track) return;
 
+    normalizeTrackUrls(track);
     audio.src = track.file;
-    audio.play().catch(e => console.log('Autoplay blocked:', e));
+    audio.play().catch(handleAutoplayBlocked);
     updateDisplay(track);
+}
+
+// If a track object contains relative `file` or `cover` paths, convert them to
+// raw.githubusercontent.com URLs so the browser can fetch the bytes directly.
+function normalizeTrackUrls(track) {
+    if (!track || typeof track !== 'object') return track;
+
+    if (track.file && !track.file.startsWith('http')) {
+        // support entries like "music/foo.mp3" or "/music/foo.mp3"
+        track.file = RAW_BASE + track.file.replace(/^\/+/, '');
+    }
+
+    if (track.cover && !track.cover.startsWith('http')) {
+        track.cover = RAW_BASE + track.cover.replace(/^\/+/, '');
+    }
+
+    return track;
+}
+
+// Handle autoplay-blocked exceptions by asking the user to interact and then
+// resuming playback. This improves UX on modern browsers that block autoplay
+// with sound until a user gesture occurs.
+function handleAutoplayBlocked(err) {
+    console.log('Autoplay blocked:', err);
+    setStatus('Autoplay blocked — click anywhere to start', 'status-offline');
+
+    const resume = () => {
+        audio.play().then(() => {
+            setStatus(isSynced ? 'Synced — Live' : 'Local mode', isSynced ? 'status-sync' : 'status-offline');
+        }).catch(e => console.log('Play after gesture failed:', e));
+        document.removeEventListener('click', resume);
+    };
+
+    document.addEventListener('click', resume, { once: true });
 }
 
 // --- Move to next song ---
