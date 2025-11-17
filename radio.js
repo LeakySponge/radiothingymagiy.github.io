@@ -52,6 +52,7 @@ function readTags(url) {
         onSuccess: tag => {
             titleEl.textContent = tag.tags.title || url;
             artistEl.textContent = tag.tags.artist || "Unknown Artist";
+            console.log("TAGS:", tag);
 
             if (tag.tags.picture) {
                 const pic = tag.tags.picture;
