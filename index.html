@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PMSS Radio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PMSS Radio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="panel header">
-    <div>
-        <div id="time">--:--</div>
-        <div id="trackName">Loading...</div>
-        <div id="selectedBy">Selected by: —</div>
+<div class="container">
+    <div class="player-card glass">
+        <img id="cover" src="placeholder.png" class="cover">
+
+        <div class="info">
+            <h1 id="title">Loading…</h1>
+            <h2 id="artist">Please wait</h2>
+            <p id="selector">Selected by: ???</p>
+        </div>
     </div>
-    <img id="albumArt" src="" alt="">
 </div>
 
-<div class="panel">
-    <h2>Upcoming Tracks</h2>
-    <div id="trackList"></div>
-</div>
+<audio id="audio" preload="auto"></audio>
 
-<audio id="player"></audio>
-
-<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.7/jsmediatags.min.js"></script>
+<script src="radio.js"></script>
 </body>
 </html>

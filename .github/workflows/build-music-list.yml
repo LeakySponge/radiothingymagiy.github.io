@@ -1,0 +1,58 @@
+name: Build & Deploy Radio
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: Generate music_list.json
+      run: |
+        echo "Generating music_list.json..."
+
+        mkdir -p music
+
+        # Create array JSON of all mp3 files in /music
+        echo "[" > music_list.json
+        find music -maxdepth 1 -type f -iname "*.mp3" -printf "\"%f\",\n" >> music_list.json
+
+        # Remove trailing comma
+        sed -i '$ s/,$//' music_list.json
+
+        echo "]" >> music_list.json
+
+        echo "Generated file:"
+        cat music_list.json
+
+    - name: Commit updated music_list.json
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Auto-update music_list.json"
+        file_pattern: music_list.json
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Upload GitHub Pages Artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: .
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
